@@ -4,8 +4,8 @@ document.addEventListener('DOMContentLoaded', () => {
   const weatherInfo = document.getElementById('weather-info');
   
 
-  const WEATHER_API_KEY = import.meta.env.VITE_WEATHER_API_KEY;
-  const GEOCODER_API_KEY = import.meta.env.VITE_GEOCODER_API_KEY;
+  const WEATHER_API_KEY =`${import.meta.env.VITE_WEATHER_API_KEY}`;
+  const GEOCODER_API_KEY =`${import.meta.env.VITE_GEOCODER_API_KEY}`;
 
   const headers = {
       'X-Yandex-Weather-Key': WEATHER_API_KEY
